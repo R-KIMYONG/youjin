@@ -312,7 +312,7 @@ $(function(){
         
     }
     if(matchMedia("screen and (max-width:767px)").matches){
-        let baseline = -600;
+        let baseline = -300;
         let pos1 = $(".con3_2").offset().top+baseline;
         let pos2 = $(".con4_2").offset().top+baseline;
         let pos3 = $(".con5").offset().top+baseline;
@@ -355,22 +355,20 @@ $(function(){
                 $(".gnb>ul>li").stop().eq(a).children(".sub").slideDown();
             }else{
                 $(this).children(".sub").stop().slideUp();
-            }
-            console.log(a)
+            }            
         })
     
         autovisual();
         function autovisual(){
-            let b=0;
-            let c=$(".visualimg li").length;    
+            let b = 0;
+            let c = $(".visualimg li").length;    
             auto = setInterval(function(){
                 b++;
-                if(b==c-1){
+                if(b == c-1){
                     b=0;
                     $(".visualimg").animate({left:"-400%"},function(){
                         $(".visualimg").css({left:"0px"})
-                    });
-                    
+                    });                    
                 }else{
                     $(".visualimg").animate({left:-b*100+"%"})
                 }
@@ -383,24 +381,22 @@ $(function(){
             d = $(this).index();
             clearInterval(auto);
             $(".nav li>div").animate({width:"10px"})
-            $(".nav li>div").eq(d).animate({width:"50%"})
-            autovisual();
-    
-            $(".visualimg").animate({left:-d*100+"%"})
-    
+            $(".nav li>div").eq(d).animate({width:"50%"})    
+            $(".visualimg").animate({left:-d*100+"%"});
+            autovisual()
         })
     
         $(".con14").on("click",function(){
             $(".popup").fadeIn();
-            $(".con14_1 img").delay(500).animate({opacity:"1"})
+            $(".con14_1 img").delay(500).animate({opacity:"1"});
         })
         $(".con15").on("click",function(){
             $(".popup").fadeIn();
-            $(".con15_1 img").delay(500).animate({opacity:"1"})
+            $(".con15_1 img").delay(500).animate({opacity:"1"});
         })
         $(".popup ul").on("click",function(){
             $(".popup").fadeOut();
-            $(".popup img").animate({opacity:"0"})
+            $(".popup img").animate({opacity:"0"});
         })
      
     
@@ -452,13 +448,13 @@ $(function(){
         $(".magazinearrow .right").on("click",function(){
             $(".slidebox>ul").addClass("right")
             if($(".slidebox>ul").hasClass("right")){                
-                $(".slidebox>ul").removeClass("left")                                             
+                $(".slidebox>ul").removeClass("left");
             }
         })
         $(".magazinearrow .left").on("click",function(){
             $(".slidebox>ul").addClass("left")   
             if($(".slidebox>ul").hasClass("left")){
-                $(".slidebox>ul").removeClass("right")                             
+                $(".slidebox>ul").removeClass("right");                             
             }
         })
 
