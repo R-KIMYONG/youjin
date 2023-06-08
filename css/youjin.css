@@ -22,7 +22,7 @@ body{overflow-x:hidden;}
     header .gnb .sub li a{color:#000;font-weight:500;font-size:14px;padding:10px 0px;display:block;box-sizing: border-box;transition:0.5s;}
     header .gnb .sub li a:hover{background:rgba(255, 255, 255, 0.4);color:#ccc;}
 
-
+    header .menu{display:none;}
     header .gnb .con1{width:20%;height:30px;display:flex;justify-content:space-between;align-items:center;}
     header .gnb .con1 img{width:10%;display:block;margin-bottom:10px;cursor: pointer;}
     header .gnb .con1 p{width:90%;color:#ccc;font-size:12px;}
@@ -356,6 +356,7 @@ body{overflow-x:hidden;}
    header .gnb .sub li a{color:#000;font-weight:500;font-size:1.05vw;padding:10px 0px;display:block;box-sizing: border-box;transition:0.5s;}
    header .gnb .sub li a:hover{background:rgba(255, 255, 255, 0.4);color:#ccc;}
 
+   header .menu{display:none;}
 
    header .gnb .con1{width:18%;height:30px;display:flex;justify-content:space-between;align-items:center;}
    header .gnb .con1 img{width:10%;display:block;margin-bottom:10px;cursor: pointer;}
